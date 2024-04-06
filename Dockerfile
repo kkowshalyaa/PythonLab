@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get -y install python3-pandas
 
 #Datasets to work
-RUN ["wget", "https://data.wa.gov/api/views/f6w7-q2d2/rows.csv", "--output-document=ev_vechicales.csv"]
+RUN ["wget", "https://data.wa.gov/api/views/f6w7-q2d2/rows.csv", "--output-document=ev_vechicles.csv"]
 RUN ["wget", "https://data.cityofnewyork.us/api/views/c3uy-2p5r/rows.csv", "--output-document=air_quality.csv"] 
 
 #VI to edit python file inside container
